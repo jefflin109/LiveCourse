@@ -1,0 +1,8 @@
+p>lorem10
+
+居中用container裝
+
+需要滿版的，就在該container外面加一層
+
+多用margin-bottom 來避免 margin-top 的bug
+

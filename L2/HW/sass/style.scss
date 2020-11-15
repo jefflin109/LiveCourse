@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+@import "_reset";
+
+// 主色系
+$primary-color: #891818;
+$support-color: #707070;
+
+// 寬度限制
+$max-width: 1200px;
+
+// 共通使用
+%flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    border-top: 1px solid #000;
+    margin-top: 17px;
+}
+/* -------------------------全域------------------------- */
+
+body {
+    background-color: #fff;
+    font-family: Noto Sans, Regular;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section,
+footer {
+    text-align: center;
+    padding: 64px 0;
+}
+
+.topBanner {
+    background-image: url(../images/photo-1552393700-42696fb89bfa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    height: 958px;
+}
+
+.container {
+    color: #fff;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 356px;
+}
+
+h1 {
+    width: 304px;
+    font: italic normal 900 80px/94px Roboto;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font: italic normal bold 64px/75px Roboto;
+    letter-spacing: 0px;
+}
+
+h4 {
+    font: italic normal bold 24px/42px Roboto;
+}
+
+h5.tBTop {
+    font: italic normal bold 24px/42px Roboto;
+    width: 64px;
+}
+
+h5.tBBottom {
+    letter-spacing: 0;
+    // width: 283px;
+    height: 72px;
+    font: italic normal bold 24px/36px Roboto;
+}
+
+ul.sns {
+    display: flex;
+    @extend %flex-cc;
+    justify-content: space-between;
+    margin-top: 48px;
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.aboutMe {
+    padding-bottom: 0;
+    h2.about {
+        margin-bottom: 40px;
+    }
+    .profile_img {
+        margin: auto;
+        display: block;
+        width: 384px;
+        height: 384px;
+    }
+
+    ul.personal_data {
+        font: italic normal bold 24px/42px Roboto;
+        margin: 24px auto;
+        li {
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0;
+        }
+    }
+    hr {
+        width: 384px;
+        border: 1px solid #000000;
+    }
+    ul.experience {
+        margin: 32px auto 56px;
+        font: italic normal bold 24px/42px Roboto;
+        li {
+            line-height: 42px;
+            margin-bottom: 32px;
+            &:before {
+                content: "";
+                background: #891818 0% 0% no-repeat padding-box;
+                height: 22px;
+                width: 22px;
+                display: inline-block;
+                border-radius: 50px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.myBrand {
+    width: 100%;
+    background-color: #000;
+    border: 1px solid #707070;
+    color: #ffffff;
+    h2.brand {
+        margin-bottom: 16px;
+    }
+    h4 {
+        margin-bottom: 32px;
+    }
+    ul {
+        font: normal bold 20px/30px Roboto;
+        line-height: 30px;
+        span {
+            font-style: italic;
+        }
+    }
+    .brandImgZone {
+        max-width: $max-width;
+        margin: 68px auto 96px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .brandImg {
+            margin: 0 auto 40px;
+        }
+    }
+}
+
+.OtherWorks {
+    h2.works {
+        margin-bottom: 24px;
+    }
+    h4 {
+        font: normal normal bold 20px/30px Roboto;
+        span {
+            font-style: italic;
+        }
+    }
+    .worksZone {
+        margin: 56px auto 64px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: $max-width;
+    }
+    figcaption {
+        margin-bottom: 56px;
+        font: normal normal bold 20px/42px Roboto;
+        span {
+            font-style: italic;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    h2 {
+        margin-bottom: 16px;
+    }
+    ul {
+        font-weight: 400;
+        display: inline-block;
+        font: italic normal bold 24px/36px Roboto;
+        li {
+            margin-bottom: 16px;
+        }
+    }
+}

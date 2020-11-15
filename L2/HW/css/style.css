@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* ----------------------------reset.css---------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ul.sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  border-top: 1px solid #000;
+  margin-top: 17px;
+}
+
+/* -------------------------全域------------------------- */
+body {
+  background-color: #fff;
+  font-family: Noto Sans, Regular;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section,
+footer {
+  text-align: center;
+  padding: 64px 0;
+}
+
+.topBanner {
+  background-image: url(../images/photo-1552393700-42696fb89bfa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  height: 958px;
+}
+
+.container {
+  color: #fff;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  top: 356px;
+}
+
+h1 {
+  width: 304px;
+  font: italic normal 900 80px/94px Roboto;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font: italic normal bold 64px/75px Roboto;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font: italic normal bold 24px/42px Roboto;
+}
+
+h5.tBTop {
+  font: italic normal bold 24px/42px Roboto;
+  width: 64px;
+}
+
+h5.tBBottom {
+  letter-spacing: 0;
+  height: 72px;
+  font: italic normal bold 24px/36px Roboto;
+}
+
+ul.sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+
+ul.sns img {
+  width: 60px;
+  height: 60px;
+}
+
+.aboutMe {
+  padding-bottom: 0;
+}
+
+.aboutMe h2.about {
+  margin-bottom: 40px;
+}
+
+.aboutMe .profile_img {
+  margin: auto;
+  display: block;
+  width: 384px;
+  height: 384px;
+}
+
+.aboutMe ul.personal_data {
+  font: italic normal bold 24px/42px Roboto;
+  margin: 24px auto;
+}
+
+.aboutMe ul.personal_data li {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0;
+}
+
+.aboutMe hr {
+  width: 384px;
+  border: 1px solid #000000;
+}
+
+.aboutMe ul.experience {
+  margin: 32px auto 56px;
+  font: italic normal bold 24px/42px Roboto;
+}
+
+.aboutMe ul.experience li {
+  line-height: 42px;
+  margin-bottom: 32px;
+}
+
+.aboutMe ul.experience li:before {
+  content: "";
+  background: #891818 0% 0% no-repeat padding-box;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 16px;
+}
+
+.myBrand {
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #707070;
+  color: #ffffff;
+}
+
+.myBrand h2.brand {
+  margin-bottom: 16px;
+}
+
+.myBrand h4 {
+  margin-bottom: 32px;
+}
+
+.myBrand ul {
+  font: normal bold 20px/30px Roboto;
+  line-height: 30px;
+}
+
+.myBrand ul span {
+  font-style: italic;
+}
+
+.myBrand .brandImgZone {
+  max-width: 1200px;
+  margin: 68px auto 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myBrand .brandImgZone .brandImg {
+  margin: 0 auto 40px;
+}
+
+.OtherWorks h2.works {
+  margin-bottom: 24px;
+}
+
+.OtherWorks h4 {
+  font: normal normal bold 20px/30px Roboto;
+}
+
+.OtherWorks h4 span {
+  font-style: italic;
+}
+
+.OtherWorks .worksZone {
+  margin: 56px auto 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+}
+
+.OtherWorks figcaption {
+  margin-bottom: 56px;
+  font: normal normal bold 20px/42px Roboto;
+}
+
+.OtherWorks figcaption span {
+  font-style: italic;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer h2 {
+  margin-bottom: 16px;
+}
+
+footer ul {
+  font-weight: 400;
+  display: inline-block;
+  font: italic normal bold 24px/36px Roboto;
+}
+
+footer ul li {
+  margin-bottom: 16px;
+}
